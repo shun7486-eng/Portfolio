@@ -1,0 +1,179 @@
+body {
+  margin: 0;
+  font-size:16px;
+  font-family: Verdana sans-serif;
+  color: #333;
+}
+
+header{
+  height: 65px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background: #323135;
+  color: #98969c;
+  z-index: 10;
+  opacity: 0.8;
+}
+
+.header-right {
+  float: right;
+}
+
+.header-right a {
+  line-height: 65px;
+  color: #efefef;
+  text-decoration: none;
+  display: block;
+  padding: 0 25px;
+  float: left;
+}
+
+.header-right a:hover{
+background-color: rgb(12, 177, 177);
+color: rgb(18, 18, 19);
+}
+
+.top h1 {
+  display: inline-block;
+  width: 70%;
+  border-bottom: 3px solid white;
+  font-size: 36px;
+  opacity: 0.8;
+  margin: 0;
+  text-align: center;
+  padding-top: 200px;
+  color: white;
+}
+
+.top p {
+  font-size: 18px;
+  opacity: 0.8;
+  text-align: center;
+  color: white;
+}
+
+.top {
+  background-image: url(../img/IMG_2209.JPG);
+  background-size: cover;
+  text-align: center;
+  height: 500px;
+}
+
+.about {
+  background: #f2f2f3;
+  list-style: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.about > h1 {
+  font-size: 36px;
+  text-align: center;
+  padding: 64px 0 0 0;
+  font-weight: bold;
+  margin: 0;
+}
+
+.about img{
+  margin-top: 20px;
+  vertical-align: baseline;
+  width: 160px;
+  border-radius: 50%;
+}
+
+.about h2 {
+  display: inline-block;
+  font-weight: normal;
+  font-size: 20px;
+}
+
+.icon {
+  display: inline-block;
+  font-size: 36px;
+  color: skyblue;
+}
+
+.icon a {
+  font-size: 18px;
+  padding-left: 48px;
+  text-decoration: none;
+}
+
+.about .text-contents {
+  width: 30%;
+  display: inline-block;
+}
+
+.languages img {
+ width: 100%;
+}
+
+.languages > h1 {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  padding: 64px 0;
+}
+
+.languages .container {
+  margin: 0 32px;
+}
+
+.languages p {
+  line-height: 1.8;
+}
+
+.languages section {
+  padding-bottom: 64px; 
+}
+
+
+.portfolio {
+  background: #d5eef9;
+  text-align: center;
+  padding: 64px 0;
+}
+
+.portfolio h1 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.portfolio p {
+  display: inline-block;
+  width: 30%;
+}
+
+footer {
+  padding: 64px 0;
+  background: #323135;
+  color: #98969c;
+  text-align: center;
+}
+
+@media (min-width: 900px) {
+  .languages .container {
+    width: 800px;
+    margin: 0 auto;
+  }
+
+  .languages section {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .languages section:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+
+  .languages .pic {
+    width: 50%;
+  }
+
+  .languages .info {
+    width: calc(50% - 32px);
+  }
+
+}
